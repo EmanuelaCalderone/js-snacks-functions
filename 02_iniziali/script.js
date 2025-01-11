@@ -4,10 +4,13 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
- 
 function prendiIniziali(parole) {
+    //creo nuovo array con le iniziali delle parole
     let nuovoArray = []
+
+    //ciclo sull'array delle parole
     for (let i = 0; i < parole.length; i++){
+        //sposto le iniziali nel nuovo array
         nuovoArray.push(parole[i][0]);
     }
     
@@ -30,7 +33,7 @@ console.log(prendiIniziali(names));
 /* 
 
 
-/*bonus arrow function: 
+/*versione arrow function: 
 
 const prendiIniziali = (parole) => {
     let nuovoArray = []

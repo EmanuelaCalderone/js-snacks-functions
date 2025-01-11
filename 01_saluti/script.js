@@ -15,4 +15,4 @@ console.log(saluto(userName));
 //Risultato atteso se si passa 'Mario': // ciao Mario
 
 
-//bonus arrow function: const saluto = (nome) => "Ciao " + nome;
+//versione arrow function: const saluto = (nome) => "Ciao " + nome;

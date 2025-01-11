@@ -12,9 +12,12 @@ const name = 'Mario';
 
 function saluto(nome) {
 
+    //creo la variabile con la data col metodo new Date()
     const data = new Date();
+    //stampo solo l'orario con ora e minuti
     console.log(data.getHours(), data.getMinutes());
 
+    //condizionale per verificare l'orario
     if (data.getHours() < 13) {
         return("buongiorno " + nome)    
     } 
@@ -26,7 +29,7 @@ function saluto(nome) {
     }
 } 
 
-//arrow function
+//versione arrow function
 /*const saluto = (nome) => {
 
     const data = new Date();

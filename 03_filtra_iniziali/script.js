@@ -4,11 +4,16 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
 function paroleX(stringhe, lettera) {
+    //creo il nuovo array 
     let nuovoArray = [];
+
+    //ciclo sull'array di nomi
     for (let i = 0; i < stringhe.length; i++){
+
+        // verifico se le iniziali sono uguali alla lettera proposta, forzandola a lettera maiuscola
         if (stringhe[i][0] === lettera.toUpperCase()) {
+            //copio quindi nel nuovo array le parole con quell'iniziale
             nuovoArray.push(stringhe[i]);
         }
     }
@@ -23,12 +28,12 @@ function paroleX(stringhe, lettera) {
 
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(paroleX(names, "l"));
+console.log(paroleX(names, "l")); //lettera di prova
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
 
-//bonus arrow function:
+//versione arrow function:
 /*const paroleX = (stringhe, lettera) => {
     let nuovoArray = [];
     for (let i = 0; i < stringhe.length; i++){
