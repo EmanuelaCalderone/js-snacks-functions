@@ -18,12 +18,13 @@ function prendiIniziali(parole) {
 
 /*function prendiIniziali(parole){
     return parole.map(parola => parola[0]);
-}/*
+}*/
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
 console.log(prendiIniziali(names));
+
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
 /* 
