@@ -14,14 +14,23 @@ function saluto(nome) {
 
     //creo la variabile con la data col metodo new Date()
     const data = new Date();
-    //stampo solo l'orario con ora e minuti
-    console.log(data.getHours(), data.getMinutes());
+    
+    let ora = data.getHours();
+    let minuti = data.getMinutes()
 
+    //prova
+   /*  let ora = 17;
+    let minuti = 30; */
+
+    //stampo l'orario con ora e minuti
+    console.log("sono le: " + ora + ":" + minuti);
+
+    
     //condizionale per verificare l'orario
-    if (data.getHours() < 13) {
+    if (ora <= 13) {
         return("buongiorno " + nome)    
     } 
-    if (data.getHours() < 17) {
+    else if (ora <= 17) {
         return("buon pomeriggio " + nome)    
     }
     else {
